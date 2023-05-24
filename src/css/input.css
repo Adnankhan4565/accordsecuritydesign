@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #1C3867;
+}
+::-webkit-scrollbar-thumb {
+    background: #008ECE;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #1C3867;
+}
+
+*{
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif;  */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* .section {
+    max-width: 1300px;
+    padding: 150px 80px;
+    margin: auto;
+} */
+
+span {
+    color: #1C3867;
+    /* color: #008ECE; */
+}
+
+.padding-top {
+    padding-top: 50px;
+}
+
+.padding-bottom {
+    padding-bottom: 50px;
+}
+
+.banner {
+    background: #1C3867;
+    display: flex;
+    justify-content: end;
+    padding-top: 10px;
+    padding-bottom: 10px;    
+}
+
+.banner p {
+    font-size: 12px;
+    margin: 0px 20px;
+    color: white;
+}
+
+.home {
+    padding-top: 150px;
+}
+
+.home p span {
+    font-weight: 600;
+    color: #1C3867;
+}
+
+.home .direct-link p {
+    padding-right: 0%;
+}
+
+.cta a {
+    color: white;
+    background: #1C3867;    
+}
+
+.cta a:hover {
+    color: #1C3867;
+    background: none;
+    border: 2px solid #1C3867;
+    transition: all 0.3s ease;
+}
+
+.section .cta {
+    background: #000;
+}
+
+.steps steps-icon {
+    background: #1C3867;
+}
+
+.stats {
+    background: #1C3867;
+}
+
+.test {
+    background: gray;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* background: #000; */
+}
+.cards1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.cards-in {
+    margin: 50px 20px;
+
+    /* padding: 0px 20px; */
+}
+
+
+/* section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 100px 0px;
+    padding: 20px 0px;
+    color: #1C3867;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: #1C3867;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+} */
+
+@media only screen and (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+    }
+    .cards1 {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/d4c3300f80.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="/src/img/logo.png" type="image/x-icon">
+  <link href="/src/css/tailwind.css" rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/input.css">
+</head>
+<body>
+
+  <!-- Nav Section -->
+  <nav class="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+    <div class="banner">
+      <p class="text-sm font-light text-gray-500 dark:text-gray-300"><a
+          class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline" href="#"><i
+            class="fa-solid fa-file-circle-plus"></i> Get a Quote</a></p>
+      <p class="text-sm font-light text-gray-500 dark:text-gray-300"><a
+          class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline" href="#"><i
+            class="fa-solid fa-phone"></i> Give a us a Call</a></p>
+    </div>
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="#" class="flex items-center">
+        <img src="/src/img/logo.png" class="h-8 mr-3" alt="Flowbite Logo" />
+        <p class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Accord <span class="">Security
+          </span></p>
+      </a>
+      <button data-collapse-toggle="navbar-dropdown" type="button"
+        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-dropdown" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <ul
+          class="menu-bg flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="/src/views/home.html"
+              class="block py-2 pl-3 pr-4 text-white bg-[#1C3867] rounded md:bg-transparent md:text-[#1C3867] md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+              aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="/src/views/about-us.html" id="dropdownNavbarLink" data-dropdown-toggle="AboutusNavbar" data-dropdown-toggle="dropdownHover"
+              data-dropdown-trigger="hover"
+              class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#1C3867] md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">About
+              Us<svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+            <!-- Dropdown menu -->
+            <div id="AboutusNavbar"
+              class="dropdown-menu z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-55 dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="/src/views/aboutus/news.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">News</a>
+                </li>
+                <li>
+                  <a href="/src/views/aboutus/testimonials.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Testimonials</a>
+                </li>
+              </ul>
+            </div>           
+          </li>
+          <li>
+            <a href="/src/views/services.html" id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" data-dropdown-toggle="dropdownHover"
+              data-dropdown-trigger="hover"
+              class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#1C3867] md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Security
+              Services<svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg></a>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbar"
+              class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-55 dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="/src/views/services/security-guards.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Security
+                    Guards</a>
+                </li>
+                <li>
+                  <a href="/src/views/services/event-security.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Event
+                    Security</a>
+                </li>
+                <li>
+                  <a href="/src/views/services/riskassessment.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Risk
+                    Assesment</a>
+                </li>
+                <li>
+                  <a href="/src/views/services/static-guard.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">ON-SITE
+                    Static Guard Services</a>
+                </li>
+                <li>
+                  <a href="/src/views/services/event-crowd-crontrol.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Event Crowd
+                    Control</a>
+                </li>
+                <li>
+                  <a href="/src/views/services/alarm-responsese.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Alarm
+                    Response Services</a>
+                </li>
+                <li>
+                  <a href="/src/views/services/mobile-patol.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mobile Patrol
+                    Services</a>
+                </li>
+              </ul>
+
+            </div>
+          </li>
+          <li>
+            <a href="/src/views/clients.html"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#1C3867] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Clients</a>
+          </li>
+          <li>
+            <a href="/src/views/pricing.html"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#1C3867] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+          </li>
+          <li>
+            <button id="dropdownNavbarLink" data-dropdown-toggle="WorkerportalNavbar"
+              data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
+              class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#1C3867] md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Worker
+              Portal<svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg></button>
+            <!-- Dropdown menu -->
+            <div id="WorkerportalNavbar"
+              class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-55 dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="/src/views/timesheet.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Timesheet</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="/src/views/contact.html"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="padding-top text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-20">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-[#1C3867]">Who We Are</h1>
+          <div class="h-1 w-20 bg-[#1C3867] rounded"></div>
+        </div>
+        <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">A dedicated team with a mission to deliver quality, embodying integrity and pushing the boundaries of what's possible.</p>
+      </div>
+      <div class="flex flex-wrap w-full mb-20">
+        <p class="mb-4 font-light">Established in 1998, Accord Security Pty Ltd is one of WA’s longest established security providers. We are a private, wholly-WA owned company supplying
+          services and personnel to a wide range of businesses from national retail chains and manufacturers to warehouses, government departments and various other
+          industries. With a highly experienced professional management team and strong infrastructure we are capable of providing a comprehensive range of security
+          services.</p>
+      <p class="mb-4 font-light">Accord Security Pty Ltd began with one single mobile patrol contract and within five short years, we became an entity with over 120 security personnel,
+          Providing coverage in excess of over 4,000 man hours per week.</p>
+      <p class="mb-4 font-light">Today we hold many prestigious contracts for a number of well-known national and international corporations and government departments.</p>
+      <p class="mb-4 font-light">To provide an idea of the level at which Accord Security operates, here is a list of some of our various past and present clients clients:</p>
+      <p class="mb-4 font-medium">· CB Richard Ellis <br> · City of Kwinana <br> · City of Mandurah <br> · City of Rockingham (City Of Swan) <br>
+          · De Francesch Building Pty Ltd <br> · Frederick Irwin Anglican School <br> · Harvey Norman (· Lease Equity · Town of Claremont · Venues West)
+      </p>
+      <p class="mb-4 font-light">The success and strength of any company lies in its capability to acquire dedicated professionals who work hand in hand. Accord Security Pty Ltd does this
+          by allowing all levels of workers, from management through to each standalone security officer, a climate of responsibility, appreciation and respect. This
+          enables every individual to develop to their full potential, whilst working as a team to accomplish business objectives and meet client expectations.</p>
+      <p class="mb-4 font-light">It is the aim of Accord Security Pty Ltd to provide a first class service, which exceeds the standards and expectations of our clients in all areas of
+          manpower-based security.</p>
+      <p class="mb-4 font-light">Accord Security is a fully-licensed private limited company – Security Licence number 0020 – and is a proud member of the Australian Security Industry
+          Association Ltd (ASIAL).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="padding-bottom">
+    <div class="container px-5 py-5 mx-auto">
+      <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-center mx-auto">
+        <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900">Have a Question?</h1>
+        <a href="/src/views/contact.html" class="flex-shrink-0 text-white bg-[#1C3867] border-0 py-2 px-8 focus:outline-none rounded text-lg mt-10 sm:mt-0">Let's Talk</a>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Footer Section -->
+  <footer class="text-gray-600 body-font">
+    <div class="px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a href="/src/views/home.html" class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+          <img src="/src/img/logo.png" class="mr-3 h-8" alt="Logo" />
+          <span class="ml-3 text-xl">Accord Security</span>
+        </a>
+        <p class="mt-2 text-sm text-gray-500"></p>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center footer-in">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Resources</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a href="#" class="text-gray-600 hover:text-gray-800">ASIAL</a>
+            </li>
+            <li>
+              <a href="#" href="/src/views/aboutus/news.html" class="text-gray-600 hover:text-gray-800">News</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Follow us</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a href="#" class="text-gray-600 hover:text-gray-800">Github</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-600 hover:text-gray-800">Discord</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Legal</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a href="#" class="text-gray-600 hover:text-gray-800">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-600 hover:text-gray-800">Terms &amp; Conditions</a>
+            </li>
+            <li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-100">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2023 
+          <a href="/src/views/home.html" class="hover:underline">Accord Security™</a>. All Rights Reserved.
+          </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a href="#" target="_blank" class="text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a href="#" target="_blank" class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a href="#" target="_blank" class="ml-3 text-gray-500">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a href="#" target="_blank" class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="/src/js/app.js"></script>
+  <script src="/src/js/flowbite.min.js"></script>
+</body>
+</html>
