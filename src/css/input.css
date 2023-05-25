@@ -14,7 +14,7 @@
     background: #008ECE;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #1C3867;
+    background: #102344;
 }
 
 *{
@@ -40,10 +40,15 @@ span {
 
 .padding-top {
     padding-top: 50px;
+    
 }
 
 .padding-bottom {
     padding-bottom: 50px;
+}
+
+.padd-bottom {
+    padding-bottom: 0%;
 }
 
 .banner {
